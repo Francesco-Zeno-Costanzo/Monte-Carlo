@@ -1,15 +1,3 @@
-import numpy as np
-def GEN(a,c,M,r0,n=1):
-    if n==1:
-        return np.mod(a*r0+c,M)
-    else:
-        r=np.zeros(n)
-        r[0]=r0
-        for i in range(1,n):
-            r[i]=np.mod(a*r[i-1]+c,M)
-    return r
-
-##
 import random as rn
 import scipy.integrate as si
 import matplotlib.pyplot as plt
