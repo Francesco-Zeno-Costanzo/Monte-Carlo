@@ -23,8 +23,17 @@ while naccept < N:
         naccept+=1
 
 print( naccept/counter)
+
+l=np.linspace(0, N, N+1)
+plt.figure(1)
 plt.title('Metropolis')
 plt.grid()
 plt.hist(x, 100,  histtype = 'step', density=True)
 plt.plot(t, p(t)/Norm)
+
+plt.figure(2)
+plt.title('Evoluzione della catena')
+plt.xlabel('iterazioni')
+plt.plot(l, x)
+plt.grid()
 plt.show()
