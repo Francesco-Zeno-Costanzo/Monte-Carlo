@@ -1,7 +1,7 @@
 # Monte-Carlo
 These codes are simple examples of the use of the Monte Carlo method to evaluete integrals; the examples stop to three dimensions but the generalization to high dimensions is simple.
 The power of the montecarlo methods lies in the fact that the error always scales as the inverse of the root of N (number of points generated) regardless of the dimensionality.
-If instead we were to use a grid in a D-dimensional domain, with N hypercubets with side proportional to the inverse of the D-th root of N.
+If instead we were to use a grid in a D-dimensional domain, with N hypercubets with side proportional to the inverse of the D-th root of N
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\delta=\frac{1}{\sqrt[D]{N}}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\delta=\frac{1}{\sqrt[D]{N}}" title="\delta=\frac{1}{\sqrt[D]{N}}" /></a>
 
