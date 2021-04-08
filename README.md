@@ -10,6 +10,6 @@ a good integration method would produce an error per hypercube proportional to t
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta=N&space;\delta^{D&plus;k}\propto&space;N^{-\frac{k}{D}}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\Delta=N&space;\delta^{D&plus;k}\propto&space;N^{-\frac{k}{D}}" title="\Delta=N \delta^{D+k}\propto N^{-\frac{k}{D}}" /></a>
 
-and therefore fixed k there will always be D such that the ratio is less than 1/2 and therefore slower than montecarlo.
+Per each k there will always be D such that the ratio is less than 1/2 and hence slower than montecarlo.
 
 The Metropolis Algorithm, on the other hand, is a monte carlo method for sampling an unknown distribution starting from one proportional to it.
