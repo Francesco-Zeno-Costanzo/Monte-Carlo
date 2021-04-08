@@ -11,4 +11,8 @@ a good integration method would produce an error per hypercube proportional to t
 
 Per each k there will always be D such that the ratio is less than 1/2 and hence slower than montecarlo.
 
-The Metropolis Algorithm, on the other hand, is a monte carlo method for sampling an unknown distribution starting from one proportional to it.
+The Metropolis Algorithm, on the other hand, is a monte carlo method for sampling an unknown distribution starting from one proportional to it, p(x).
+We have to generate a sequence of extractions x0, . . . xN , starting from a given x0. We generate xx uniformly in the interval [xk - d, xk + d];
+if the probability ratio between the new variable and the old one is greater than a randomly generated number in [0, 1] the move is accepted otherwise rejected.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\\&space;xx&space;\in&space;[x_k&space;-&space;\delta,&space;x_k&space;&plus;&space;\delta&space;]\\&space;r&space;\in&space;[0,&space;1]\\&space;\frac{p(xx)}{p(x_k)}&space;<&space;r&space;\rightarrow&space;x_{k&plus;1}=xx\\&space;\frac{p(xx)}{p(x_k)}&space;>&space;r&space;\rightarrow&space;x_{k&plus;1}=x_k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\\&space;xx&space;\in&space;[x_k&space;-&space;\delta,&space;x_k&space;&plus;&space;\delta&space;]\\&space;r&space;\in&space;[0,&space;1]\\&space;\frac{p(xx)}{p(x_k)}&space;<&space;r&space;\rightarrow&space;x_{k&plus;1}=xx\\&space;\frac{p(xx)}{p(x_k)}&space;>&space;r&space;\rightarrow&space;x_{k&plus;1}=x_k" title="\\ xx \in [x_k - \delta, x_k + \delta ]\\ r \in [0, 1]\\ \frac{p(xx)}{p(x_k)} < r \rightarrow x_{k+1}=xx\\ \frac{p(xx)}{p(x_k)} > r \rightarrow x_{k+1}=x_k" /></a>
