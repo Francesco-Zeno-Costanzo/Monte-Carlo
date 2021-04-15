@@ -1,3 +1,4 @@
+The code that performs the simulation is ising2d.c. Plotising.py makes the graphs which are shown below. Ising.py creates the lattice animation.
 The ising model is an attempt to simulate the structure of a physical ferromagnetic substance, or more accurately, to simulate a domain in a ferromagnetic substance (or anti-ferromagnetic).
 We will consider a 2-dimensional periodic lattice. Associated with each lattice site is a spin variable which is a number that is eitheir +1 or -1.
 The hamiltonian of the system is:
