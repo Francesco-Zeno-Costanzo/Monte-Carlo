@@ -20,3 +20,5 @@ So we have a spontaneus simmetry breaking; the correct  approach would be to con
 
 ![](plots/ising.png)
 ![](plots/indici_ising.png)
+
+![](plots/raffr.gif)
