@@ -4,36 +4,21 @@
 #include<math.h>
 #include<time.h>
 
-#define L		50
-#define J		1.0
-#define H		0.0
+#define L	50
+#define J	1.0
+#define H	0.0
 #define step	70
-#define Bm		0.35
-#define BM		0.5
+#define Bm	0.35
+#define BM	0.5
 #define decorr  100
-#define N		10000
+#define N	10000
 
 int Reticolo[L][L];
-/*
-double gen(long long int x0){
-	unsigned long long int a=16807, M=2147483647;
-	//int a=16807;
-	//int M=pow(2, 31)-1;
-	double r=0;
-	r=(double)((x0*a)%M)/(double)(M);
-	return r;
-}
-*/
+
 void init (void) {
-	//long long int w=20000;
     	for(int i=0;i<L;i++) {
 		for(int j=0;j<L; j++) {
 			Reticolo[i][j] = ((rand()%2)*2)-1;
-			/*Reticolo[i][j] = 1;
-			if(gen(w)<0.5){
-				Reticolo[i][j] = -1;
-			}
-			w=w+w/4;*/
 		}
 	}
 }
@@ -42,16 +27,8 @@ void Metropolis (double B) {
 	int c=0;
 	int b=0;
 	double dE=0;
-	/*long long int t=20080;
-	long long int q=20007;
-	long long int a=20400;*/
 	for(int i=0; i<L; i++){
 		for(int j=0; j<L; j++){
-			/*c = gen(t)*L;
-			b = gen(q)*L;
-			t=t+t/4;
-			a=a+a/4;
-			q=q+q/4;*/
 			c = rand()%L;
 			b = rand()%L;
 			dE=2*J*(Reticolo[c][b])*( Reticolo[c][(b+1)%L] + Reticolo[(c+1)%L][b] + Reticolo[c][(b+L-1)%L] + Reticolo[(c+L-1)%L][b]) + H*(Reticolo[c][b]);
