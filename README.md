@@ -1,5 +1,7 @@
 # Monte-Carlo
 These codes are simple examples of the use of the Monte Carlo method to evaluete integrals; we stop with three dimensional examples but the generalization to higher dimensions is simple.
+intmon.c is the equivalent of Int_M.py.
+Vsfera.c compute the N-dimensional hypersphere volume.
 The power of the montecarlo methods is that the error always scales as the inverse of the root of N (number of points generated) regardless of the dimensionality.
 If we were to use a grid in a D-dimensional domain, with N hypercubets with side proportional to the inverse of the D-th root of N
 
