@@ -6,12 +6,6 @@
 #define R  1.0
 #define N  10000000//00
 
-long int factorial(long int n) {
-	if (n == 0) return 1;
-	else if (n == 1) return 1;
-	return n * factorial(n-2);
-}
-
 double VS(int D){
 	double v= pow(M_PI, D/2.0) * pow(R, D) / tgamma(1.0 + D/2.0);
 	return v;
@@ -41,7 +35,7 @@ int main (void){
 	srand(time(NULL));
 	double l=0;
 	double m=0;
-	printf("    MC \t \t esatto \t diff \n");
+	printf("D   MC \t \t esatto \t diff \n");
 	for(int D=2; D<19; D++){
 		m=l=0;
 		l=MC(D);
