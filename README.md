@@ -17,6 +17,3 @@ a good integration method instead we would produce an error per hypercube propor
 Per each k there will always be D such that the ratio is less than 1/2 and hence slower than montecarlo.
 
 
-To test the goodness of the generator we compare the moments of the uniform distribution:
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\int_0&space;^1&space;x^p&space;dx&space;=&space;\frac{1}{1&plus;p}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_0&space;^1&space;x^p&space;dx&space;=&space;\frac{1}{1&plus;p}" title="\int_0 ^1 x^p dx = \frac{1}{1+p}" /></a>
