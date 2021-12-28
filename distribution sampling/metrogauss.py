@@ -47,6 +47,20 @@ l=np.linspace(0, N, N)
 
 #data blocking pler il calcolo degli errori (i dati sono correlati)
 def DB(v, m):
+    """
+    Funzione che esegure il data blocking
+    Parameters
+    ----------
+    v : array
+        contiene i dati di cui calcolare l'errore
+    m : float
+        media degli elemnti di v
+
+    Return
+    ----------
+    dx : float
+        errore sulla media degli elemti di v
+    """
     z=0
     k=6
     for j in range(1,len(v)//(2)**k):
